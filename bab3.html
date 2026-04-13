@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bab 3 - University Tour</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Georgia, serif;
+
+            background-image: url("bg1.png");
+            background-size: cover;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .overlay {
+            min-height: 100vh;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 60px 100px;
+        }
+
+        .nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .nav a {
+            margin: 0 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .page-nav {
+            margin-bottom: 40px;
+        }
+
+        .prev-btn {
+            display: inline-block;
+            padding: 8px 18px;
+            border: 2px solid black;
+            text-decoration: none;
+            color: black;
+            transition: 0.3s;
+        }
+
+        .prev-btn:hover {
+            background: black;
+            color: white;
+        }
+
+        .content {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .content h1 {
+            font-size: 50px;
+            margin-bottom: 40px;
+        }
+        .uni {
+            display: flex;
+            align-items: center;
+            margin-bottom: 60px;
+            gap: 30px;
+        }
+
+        .uni.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .uni img {
+            width: 400px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .uni-text {
+            flex: 1;
+        }
+
+        .uni-text h2 {
+            margin-bottom: 10px;
+        }
+
+        .uni-text p {
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .logo-box {
+            width: 120px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <div class="nav">
+        <a href="bab1.html">Host Family</a>
+        <a href="bab2.html">Exploring</a>
+        <a href="bab3.html">University</a>
+        <a href="bab4.html">School</a>
+        <a href="bab5.html">Feedback</a>
+    </div>
+
+    <div class="page-nav">
+        <a href="bab2.html" class="prev-btn">Previous Page</a>
+        <a href="bab4.html" class="prev-btn">Next Page</a>
+    </div>
+
+    <div class="content">
+        <h1>University Tour</h1>
+
+        <div class="uni">
+            <img src="usyd.png">
+            <div class="uni-text">
+                <h2>University of Sydney</h2>
+                <p>
+                    One of the oldest and most prestigious universities in Australia. 
+                    It is known for strong research in health, technology, and environment. 
+                    Ranked 25th globally in QS World University Rankings 2026.
+                    During our visit, we had a chance to do a business workshop where we brainstorm
+                    while eating chocolate.
+                </p>
+                <img src="usyd-logo.png" class="logo-box">
+            </div>
+        </div>
+
+        <div class="uni reverse">
+            <img src="unsw.png">
+            <div class="uni-text">
+                <h2>UNSW Sydney</h2>
+                <p>
+                    Known for excellence in engineering, business, and technology. 
+                    Ranked 20th globally and strong in international collaboration.
+                    While our visit in UNSW might be a little too short, we had alot of fun
+                    during the showcase of genuine human organ preserved in a museum.
+                </p>
+                <img src="unsw-logo.jpg" class="logo-box">
+            </div>
+        </div>
+
+        <div class="uni">
+            <img src="uts.png">
+            <div class="uni-text">
+                <h2>University of Technology Sydney</h2>
+                <p>
+                    Known for its practical learning approach and strong industry connections. 
+                    Ranked within the global top 100 universities.UTS was byfar the most interesting One
+                    you get to make your own boat in a engineering class, and which boat can withstand waves
+                    and marbel dropped wins.
+                </p>
+                <img src="uts-logo.jpg" class="logo-box">
+            </div>
+        </div>
+<div class="uni reverse">
+    <img src="mq.png">
+    <div class="uni-text">
+        <h2>Macquarie University</h2>
+        <p>
+            Known for its modern campus and strong focus on innovation and research. 
+            Macquarie University is recognized for programs in business, science, 
+            and technology, and is ranked among the top universities globally.
+            Sadly when we visit this lovely place, we didnt have no activities, however
+            we had our fun enjoying the school museum of artifacts.
+        </p>
+        <img src="mq-logo.jpg" class="logo-box">
+    </div>
+</div>
+    </div>
+
+</div>
+
+</body>
+</html>

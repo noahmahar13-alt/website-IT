@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bab 5 - Feedback</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Georgia, serif;
+
+            background-image: url("bg1.png");
+            background-size: cover;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .overlay {
+            min-height: 100vh;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 60px 100px;
+        }
+
+        .nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .nav a {
+            margin: 0 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .page-nav {
+            margin-bottom: 40px;
+        }
+
+        .prev-btn {
+            display: inline-block;
+            padding: 8px 18px;
+            border: 2px solid black;
+            text-decoration: none;
+            color: black;
+            transition: 0.3s;
+        }
+
+        .prev-btn:hover {
+            background: black;
+            color: white;
+        }
+
+        .content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .content h1 {
+            font-size: 45px;
+            margin-bottom: 30px;
+        }
+
+        .content p {
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        input, textarea, select {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            font-family: inherit;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            width: 150px;
+            padding: 10px;
+            border: 2px solid black;
+            background: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: black;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <!-- NAV -->
+    <div class="nav">
+        <a href="bab1.html">Host Family</a>
+        <a href="bab2.html">Exploring</a>
+        <a href="bab3.html">University</a>
+        <a href="bab4.html">School</a>
+        <a href="bab5.html">Feedback</a>
+    </div>
+
+    <div class="page-nav">
+        <a href="bab4.html" class="prev-btn">← Previous Page</a>
+    </div>
+
+    <div class="content">
+        <h1>Feedback</h1>
+
+        <p>
+            Thank you for visiting our Edutrip Sydney website. 
+            Please share your feedback below.
+        </p>
+
+        <form>
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>How did you find this website?</label>
+            <select>
+                <option>Very Good</option>
+                <option>Good</option>
+                <option>Average</option>
+                <option>Needs Improvement</option>
+            </select>
+
+            <label>Your Feedback:</label>
+            <textarea rows="5" placeholder="Write your feedback..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

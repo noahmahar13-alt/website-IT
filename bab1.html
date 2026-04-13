@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bab 1 - About Us</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Georgia, serif;
+
+            background-image: url("bg1.png");
+            background-size: cover;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .overlay {
+            min-height: 100vh;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 60px 100px;
+        }
+
+        .header h1 {
+            font-size: 50px;
+            margin-bottom: 5px;
+        }
+
+        .header h2 {
+            font-size: 20px;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        .names {
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+
+        .nav {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .nav a {
+            margin: 0 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        .page-nav {
+            margin-bottom: 40px;
+        }
+
+        .prev-btn {
+            display: inline-block;
+            padding: 8px 18px;
+            border: 2px solid black;
+            text-decoration: none;
+            color: black;
+            transition: 0.3s;
+        }
+
+        .prev-btn:hover {
+            background: black;
+            color: white;
+        }
+
+
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .content h1 {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .profile.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .profile img {
+            width: 300px;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .profile-text h2 {
+            margin-bottom: 10px;
+        }
+
+        .profile-text p {
+            line-height: 1.7;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <div class="nav">
+        <a href="bab1.html">Host Family</a>
+        <a href="bab2.html">Exploring</a>
+        <a href="bab3.html">University</a>
+        <a href="bab4.html">School</a>
+        <a href="bab5.html">Feedback</a>
+    </div>
+
+
+    <div class="page-nav">
+        <a href="index.html" class="prev-btn">Previous Page</a>
+        <a href="bab2.html" class="prev-btn">Next Page</a>
+    </div>
+
+
+    <div class="content">
+        <h1>No Hotel No Problem</h1>
+
+       
+        <div class="profile">
+            <img src="noah.jpeg">
+            <div class="profile-text">
+                <h2>Noah Alexander Mahar</h2>
+                <p>
+                    During our edutrip in Sydney, We didnt stay at a hotel, but instead we stay at local residence.
+                    Living with host parents gave me bunch of new experiences of daily life in australia. They act like 
+                    real parents where they make food and care about our health, helped me adapt to the environment, and
+                    made me feel safe throughout the trip
+                </p>
+            </div>
+        </div>
+        <div class="profile reverse">
+            <img src="clayton.png">
+            <div class="profile-text">
+                <h2>Clayton Setiabudi</h2>
+                <p>
+                First time I met my host parents, I was immedietly greeted with warmth and comfort. They are very welcoming and 
+                they are very happy to have me. Throughout the trip they guide me with everything about sydney like, foods, public transport,
+                rules, and much more. My host parents have a vietnamese background so I was able to try authentic vietnamese foods.
+                Even though the language barrier slows my connection with the grandma I was able to use sign language to communicate with the grandma.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

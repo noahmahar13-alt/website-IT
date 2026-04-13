@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bab 2 - Exploring Sydney</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Georgia, serif;
+
+            background-image: url("bg1.png");
+            background-size: cover;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .overlay {
+            min-height: 100vh;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 60px 100px;
+        }
+
+        /* NAV */
+        .nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .nav a {
+            margin: 0 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* PREV BUTTON */
+        .page-nav {
+            margin-bottom: 40px;
+        }
+
+        .prev-btn {
+            display: inline-block;
+            padding: 8px 18px;
+            border: 2px solid black;
+            text-decoration: none;
+            color: black;
+            transition: 0.3s;
+        }
+
+        .prev-btn:hover {
+            background: black;
+            color: white;
+        }
+
+        /* CONTENT */
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .content h1 {
+            font-size: 45px;
+            margin-bottom: 40px;
+        }
+
+        /* CARD STYLE SECTION */
+        .place {
+            position: relative;
+            margin-bottom: 60px;
+            overflow: hidden;
+        }
+
+        .place img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .place:hover img {
+            transform: scale(1.05);
+        }
+
+        /* TEXT BOX OVER IMAGE */
+        .place-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(200, 220, 220, 0.9);
+            padding: 20px;
+        }
+
+        .place-info h2 {
+            margin-bottom: 8px;
+        }
+
+        .place-info p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <div class="nav">
+        <a href="bab1.html">Host Family</a>
+        <a href="bab2.html">Exploring</a>
+        <a href="bab3.html">University</a>
+        <a href="bab4.html">School</a>
+        <a href="bab5.html">Feedback</a>
+    </div>
+
+    <div class="page-nav">
+        <a href="bab1.html" class="prev-btn">Previous Page</a>
+        <a href="bab3.html" class="prev-btn">Next Page</a>
+    </div>
+    <div class="content">
+        <h1>Exploring Sydney</h1>
+
+        <div class="place">
+            <img src="opera.png">
+            <div class="place-info">
+                <h2>Sydney Opera House</h2>
+                <p>
+                    The Sydney Opera House is one of the most famous landmarks in the world, 
+                    known for its unique sail-like architectural design. Located at Circular Quay, 
+                    it serves as a major performing arts center hosting concerts, театers, and events. 
+                    Its position by the harbor also provides stunning views, making it a key symbol 
+                    of Australia’s culture and identity.
+                </p>
+            </div>
+        </div>
+        
+        <div class="place">
+            <img src="cbd.jpg">
+            <div class="place-info">
+                <h2>Sydney CBD</h2>
+                <p>
+                    Sydney’s Central Business District is the economic and commercial center 
+                    of the city. It is filled with modern skyscrapers, offices, shopping areas, 
+                    and restaurants. The CBD reflects a fast-paced urban lifestyle while still 
+                    maintaining access to public spaces like parks and waterfront areas.
+                </p>
+            </div>
+        </div>
+
+        <div class="place">
+            <img src="rocks.jpg">
+            <div class="place-info">
+                <h2>The Rocks Market</h2>
+                <p>
+                    The Rocks Market is located in one of the oldest parts of Sydney, rich in 
+                    history and culture. It offers a variety of handmade crafts, local food, 
+                    and unique souvenirs. The area combines historic buildings with modern 
+                    tourist attractions, giving visitors a glimpse into Sydney’s past and present.
+                </p>
+            </div>
+        </div>
+
+        <div class="place">
+            <img src="transport.jpg">
+            <div class="place-info">
+                <h2>Public Transport</h2>
+                <p>
+                    Sydney’s public transport system includes trains, buses, ferries, and light rail. 
+                    It is well-organized, efficient, and easy to navigate using systems like the Opal card. 
+                    The transport network connects different parts of the city, making travel convenient 
+                    for both residents and visitors.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
